@@ -1,4 +1,4 @@
-body{
+*{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -6,7 +6,7 @@ body{
 } 
 
 .main-container{
-    height: 100vh;
+    height: auto !important;
     width: 100%;
     background: linear-gradient(27deg, rgba(0,36,13,1) 0%, rgba(9,121,97,1) 35%, rgba(0,255,231,1) 100%);
 }
@@ -51,7 +51,7 @@ body{
 .logo img{
     height: 60px;
     width: auto;
-    position: fixed;
+    position: absolute;
     left: 50px;
     top: 20px;
     display: block;
@@ -60,5 +60,113 @@ body{
 .logo img:hover{
     transform: scale(1.1);
     transition: all 0.1s ease;
+}
+
+/* about section  */
+
+.about-section{
+    width: 1024px;
+    height: 430px;
+    margin-top: 80px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-1{
+    font-size: 1rem;
+    font-family: Roboto Mono, monospace;
+    opacity: 1;
+    color: #00FFE7;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.about-section-info h1{
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    color: white ;
+    letter-spacing: -.05em;
+    margin-bottom: 24px;
+}
+
+.about-section-info h2{
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    color: rgb(178, 248, 233);
+    letter-spacing: -.05em;
+    margin-bottom: 15px;
+}
+
+.about-info{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    opacity: 0.8;
+}
+
+.about-info2 p{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-family: Roboto Mono, monospace;
+    color: #00FFE7;
+    opacity: 1;
+}
+
+.about-info2 p:hover{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    transform: scale(1.1);
+    border-bottom: 2px solid rgba(9,121,97,1);
+    border-radius: 10%;
+}
+
+/* side account pannel  */
+.side-social-accounts{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   width: 44px;
+   height: 336px;
+   opacity: 0.8;
+   position: fixed;
+   left: 18px;
+   bottom: -100px;
+   right: 1171px;
+}
+
+.fa-instagram:hover{
+    transition: all 0.1s ease;
+    transform: scale(2.2);
+    color: #6edbd0;
+}
+
+.fa-linkedin-in:hover{
+    transition: all 0.1s ease;
+    transform: scale(2.2);
+    color: #6edbd0;
+}
+
+.fa-facebook-f:hover{
+    transition: all 0.1s ease;
+    transform: scale(2.2);
+    color: #6edbd0;
+}
+
+.fa-github:hover{
+    transition: all 0.1s ease;
+    transform: scale(2.2);
+    color: #6edbd0;
+}
+
+.hr-line hr{
+    width: 2px;
+    height: 96px;
+    color: white;
 }
 
