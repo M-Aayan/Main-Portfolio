@@ -5,6 +5,10 @@
     color: white;
 } 
 
+html{
+    scroll-behavior: smooth;
+}
+
 .main-container{
     height: auto !important;
     width: 100%;
@@ -168,5 +172,90 @@
     width: 2px;
     height: 96px;
     color: white;
+}
+
+.about-info-section{
+    width: 1024px;
+    height: 500px;
+    margin-top: 120px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about-info-title{
+    font-size: 2rem;
+    font-family: Inter, sans-serif;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hello{
+    font-size: 1.5rem;
+    font-family: Inter, sans-serif;
+    color: #00FFE7;
+    margin-bottom: 10px;
+}
+
+.shake-hand{
+    display: inline-block;
+    animation: shake .5s ease-in-out infinite;
+    font-size: 21px;
+}
+
+@keyframes shake {
+    0% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+.about-info-content{
+    font-size: 16px;
+    font-family: Inter,sans-serif;
+    color: #6edbd0;
+    margin-bottom: 30px;
+}
+
+.bold-name{
+    color: #00FFE7;
+    text-decoration: none;
+}
+
+.bold-name:hover{
+    text-decoration: underline;
+    transition: all 0.5s ease-in;
+}
+
+.about-tech{
+    font-size: 1.3rem;
+    font-family: Inter, sans-serif;
+    color: white;
+    margin-top: 50px;
+}
+
+.about-info-skills ul{
+    display: inline-block;
+    width: 120px;
+}
+
+
+.about-info-skills ul li{
+    display: flex;
+    margin-bottom: 12px;
+    list-style: none;
+}
+
+.about-info-skills ul li:hover{
+    transition: all 0.3s ease;
+    color: #00FFE7;
+    transform: scale(1.1);
+}
+
+.fa-caret-right{
+    margin-top: 2px;
+    margin-right: 8px;
+    font-size: 13px;
 }
 
