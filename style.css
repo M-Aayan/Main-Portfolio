@@ -8,12 +8,31 @@
 html{
     scroll-behavior: smooth;
 }
+ 
 
 .main-container{
+    margin: 0 auto;
+    padding: 0;
+    width: auto !important;
     height: auto !important;
-    width: 100%;
-    background: linear-gradient(27deg, rgba(0,36,13,1) 0%, rgba(9,121,97,1) 35%, rgba(48, 241, 222, 0.897) 100%);
+    background: linear-gradient(-45deg, rgba(0,36,13,1), rgba(9,121,97,1), rgba(48, 241, 222, 0.897));
+    background-size: 400% 400%;
+    animation: gradient-animation 6s ease infinite;
 }
+
+
+/* Keyframes for background animation */
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 
 /* navbar  */
@@ -38,7 +57,7 @@ html{
 
 
 .navbar ul li a{
-    color: lightslategray;
+    color: white;
     text-decoration: none;
 }
 
@@ -46,9 +65,9 @@ html{
     font-size: 18px;
     transition: all 0.1s ease;
     color: rgba(0,36,13,1); 
-    border-bottom: 1.5px solid rgba(9,121,97,1);
+    border-bottom: 2px solid rgb(0, 255, 213);
     border-radius: 15%;
-    border-right: 1.5px solid rgba(9,121,97,1); 
+    border-right: 2px solid rgb(0, 255, 213); 
 }
 
 /* Mylogo  */
@@ -656,7 +675,7 @@ html{
 /* footer  */
 
 .footer-section {
-    width: auto !important;;
+    width: auto;
     height: 100px;
     background-color: #16553c;
     color: #fff;
@@ -665,7 +684,7 @@ html{
   }
   
   .footer-container {
-    max-width: 1200px;
+    width: auto;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -723,3 +742,5 @@ html{
     background-color:#05291b;
     color: #ffffff;
 }
+
+
