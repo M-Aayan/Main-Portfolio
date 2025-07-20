@@ -1,6 +1,51 @@
-# Main-Portfolio
-I initially designed my portfolio in Figma, focusing on creating a modern and visually appealing layout that showcases my skills, projects, and experience. The design emphasizes usability, with clean sections, intuitive navigation, and responsive elements.
+# 🎨 Personal Portfolio Website (HTML & CSS)
 
-Now, I'm converting this design into a functional project using HTML and CSS. The website features an engaging hero section, well-structured project showcases, and interactive hover effects. In the future, I plan to enhance it further by adding JavaScript for dynamic functionality, such as form validation, smooth scrolling, and modal popups for project details.
+This repository contains my personal portfolio website designed using only **HTML** and **CSS**. It showcases my journey as a **UI/UX designer** and front-end learner, presenting my work, projects, and personal brand in a clean, structured format.
 
-The portfolio is designed to perform seamlessly across devices, ensuring an optimal user experience with a responsive layout that adjusts beautifully to different screen sizes. Its aesthetic complements my personal brand, combining professionalism with creativity.
+---
+
+## 📌 About
+
+This portfolio website was developed as a static, **non-responsive** project to practice and demonstrate:
+
+- Clean UI layout and structure
+- Visual styling using CSS
+- Clear project presentation
+- Branding consistency
+
+While the layout currently does not include responsiveness, it is optimized for standard desktop view.
+
+---
+
+## 🌟 Features
+
+- Professional, aesthetic layout
+- Highlights key projects and experiences
+- HTML-only structure with CSS-based design
+- Consistent design elements to reflect my personal brand
+
+---
+
+## 🔍 How It Performs
+
+- The site loads smoothly on desktop environments.
+- Typography, spacing, and color schemes are selected to balance creativity with professionalism.
+- All content is **static** and currently not responsive to mobile or tablet screen sizes.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Description |
+|------------|-------------|
+| **HTML5**  | Structure and content |
+| **CSS3**   | Styling, layout, typography, and aesthetics |
+
+---
+
+## 🧠 What I Practiced
+
+- Semantic HTML structure
+- CSS layout techniques (margin, padding, grid/flexbox if used)
+- Font styling, spacing, color schemes
+- Section-based web design
