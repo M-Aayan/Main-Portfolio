@@ -1,219 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="tab-logo.png">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="tab logo.png">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="main-container">
+  <div class="main-container">
 
-        <!-- navbar  -->
-        <div class="navbar">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-                <div class="logo">
-                    <img src="signature whit.png" alt="MyLogo">
-                </div>
-        </div>
-        
+    <!-- navbar  -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="signature whit.png" alt="My Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="New Updated Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
 
-        <!-- about section  -->
-        <section class="about-section">
-        <div class="about-section-info">
-            <p class="info-1">Hi,my name is</p>
-            <h1>Muhammad Aayan Shaikh.</h1>
-            <h2>I Create  visually pleasing design</h2>
-            <h2>and interfaces for the web.</h2>
-        </div>
-        <div class="about-info">
-            <p>I'm a Designer and Front-end web developer with a passion for sleek and clean UI element.I worked on many UI design projects in figma and also have hands-on experience in building web applications using HTML,CSS and Javascript.</p>
-        </div>
-        <div class="about-info2">
-            <p>Currently available for freelance</p>
-        </div>
-        </section>
+    <button id="mode-toggle" aria-label="Toggle dark/light mode" style="
+  position: fixed;
+  top: 100px;
+  left: 140px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: rgba(255 255 255 / 0.2);
+  color: white;
+  font-weight: 600;
+  z-index: 2000;
+  backdrop-filter: blur(8px);
+  transition: background-color 0.3s, color 0.3s;
+  
+  /* Smaller devices */
+@media (max-width: 600px) {
+  #mode-toggle {
+    top: 10px;
+    left: 30px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-width: 80px;
+  }
+}
 
-
-        <!-- social side panels -->
-        <div class="side-social-accounts">
-            <a href="https://www.instagram.com/muhammad_aayan_69/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/muhammad-aayan-shaikh-ab96a2319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.facebook.com/share/1GQPwB43w6/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://github.com/M-Aayan" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <div class="hr-line"><hr></div>
-        </div>
-
-
-        <!-- about information -->
-         <section id="about" class="about-info-section">
-            <div class="about-info-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="hello">Hey!<span class="shake-hand">👋</span></div>
-            <div class="about-info-content">
-                <p>My name is <b class="bold-name">Muhammad Aayan Shaikh</b>, a first-year <b class="bold-name">Computer Science</b> student at <a class="bold-name" href="https://ilmauniversity.edu.pk/">Ilma University</a>.I am also Designer and Front-end web developer with a passion for sleek and clean UI element.I worked on many UI design projects in figma and also have hands-on experience in building web applications using HTML,CSS and Javascript.</p>
-                <p class="about-tech">Few technologies that I'm working on recently:</p>
-            </div>
-            <div class="about-info-skills">
-                    <ul>
-                        <li><i class="fa-solid fa-caret-right"></i>HTML</li>
-                        <li><i class="fa-solid fa-caret-right"></i>CSS</li>
-                        <li><i class="fa-solid fa-caret-right"></i>Javascript</li>
-                        <li><i class="fa-solid fa-caret-right"></i>figma</li>
-                        <li><i class="fa-solid fa-caret-right"></i>Github</li>
-                    </ul>
-            </div>
-         </section>
+/* Extra small devices */
+@media (max-width: 360px) {
+  #mode-toggle {
+    top: 8px;
+    left: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    min-width: 70px;
+  }
+}
+  "
+  
+>Light Mode</button>
 
 
-         <!-- skills  -->
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-text">
+        <p class="intro">Hi, my name is</p>
+        <h1 class="name">Muhammad Aayan Shaikh.</h1>
+        <h2 class="tagline">I create visually pleasing designs</h2>
+        <h2 class="tagline">and interfaces for the web.</h2>
+      </div>
 
-         <section class="Skills" id="skills">
-            <div class="main-skill-heading">
-                <h1>What I Do</h1>
-            </div>
-            <div class="gif-and-my-skill-info">
-                <div class="image"><img src="coding-image.png" alt="image"></div>
-                <div class="heading2">
-                    <h2>Front-end Development</h2>
-                    <div class="logos">
-                        <svg class="html" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
-                        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
-                        </svg>
-                    
-                        <svg class="CSS" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
-                        <linearGradient id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1" x1="16.33" x2="32.293" y1="-2.748" y2="41.109" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)" d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z"></path><path fill="#35c1f1" d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z"></path><path fill="#fff" d="M33.1,13H24v4h4.9l-0.3,4H24v4h4.4l-0.3,4.5L24,30.9v4.2l7.9-2.6L32.6,21l0,0L33.1,13z"></path><path fill="#d6e0e9" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4	L19.8,27z"></path><path d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M34.164,12H33.1H24h-9.2h-1.078l0.081,1.075l0.3,4L14.172,18H15.1H24h3.822l-0.15,2H24h-4.6h-1.051 l0.052,1.05l0.2,4L18.649,26H15.8h-1.056l0.058,1.054l0.3,5.5l0.037,0.682l0.649,0.214l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6 l0.644-0.212l0.041-0.677l0.7-11.5l0.5-7.998L34.164,12L34.164,12z M20.761,26H24h3.331l-0.185,2.769L24,29.843l-3.128-1.068 l-0.073-1.815L20.761,26L20.761,26z" opacity=".05"></path><path d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M33.632,12.5H33.1H24h-9.2h-0.539l0.04,0.537l0.3,4l0.035,0.463H15.1H24h4.361l-0.225,3H24h-4.6h-0.526 l0.026,0.525l0.2,4l0.024,0.475H19.6H24h3.866l-0.242,3.634L24,30.372l-3.614-1.234L20.3,26.98L20.28,26.5H19.8h-4h-0.528 l0.029,0.527l0.3,5.5l0.019,0.341l0.324,0.107l7.9,2.6L24,35.626l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.5-7.999 L33.632,12.5L33.632,12.5z" opacity=".07"></path>
-                        </svg>
-                    
-    
-                        <svg class="JS" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
-                            <path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
-                            </svg>
-                    
-                        <svg class="Figma" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
-                            <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path><path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path><path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path><circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
-                            </svg>
+      <div class="about-description">
+        <p>
+          I'm a Designer and Front-end Web Developer with a passion for clean and functional UI elements.
+          I have worked on multiple UI design projects in Figma and have hands-on experience
+          building web applications using HTML, CSS, and JavaScript.
+        </p>
+      </div>
 
-                            <span class="my-skill-info-list">
-                                <p><b style="color: #00FFE7;">HTML:</b> Crafting clean, semantic, and accessible web structures.</p>
-                                <p><b style="color: #00FFE7;">CSS:</b> Designing visually appealing and responsive web layouts.</p>
-                                <p><b style="color: #00FFE7;">Javascript:</b> interactivity and dynamic functionality to websites.</p>
-                                <p><b style="color: #00FFE7;">Figma:</b> Creating intuitive and user-friendly UI/UX designs with precision.</p>
-                            </span>
-                        </div>
-                </div>
-            </div>
-         </section>
+      <div class="availability">
+        <p>Currently available for freelance</p>
+      </div>
+    </section>
 
 
-         <section class="Projects" id="projects">
-            <div class="project-heading">
-                <h1>Projects I've Worked</h1>
-            </div>
 
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-cards">
-                    <img class="images" src="xbox web landing page design.jpg" alt="Project 1" width="400px">
-                    <div class="project-info">
-                        <h2>Xbox Web Landing page UI</h2>
-                        <p>I completed a personal project on Figma to reimagine the web landing page for Xbox Series X. The goal was to create an engaging, sleek, and immersive user experience that showcases the power and aesthetics of the console while improving navigability and visual appeal.</p>
-                        <a href="https://www.behance.net/gallery/211401647/Xbox-series-x-uiux-design" target="_blank" class="project-link">View Project</a>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <img class="images" src="zilbil app UI.png" alt="Project 2" width="400px">
-                    <div class="project-info">
-                        <h2>Zilbil App UI Design</h2>
-                        <p>Crafted a clean, modern, and user-friendly UI for Zilbil, a men's clothing brand app, using Figma. Focused on intuitive navigation and engaging product displays for an enhanced shopping experience.</p>
-                        <a href="https://www.behance.net/gallery/209241503/A-zilbil-pakistani-brand-app-ui-design-prototype" target="_blank" class="project-link">View Project</a>
-                    </div>
-
-                     <!-- Project 3 -->
-                    <img class="images" src="expertizo-clone.png" alt="Project 3" width="400px">
-                    <div class="project-info">
-                        <h2>Expertizo Clone</h2>
-                        <p>Creating a clone of the Expetizo website using HTML and CSS. This project will focus on replicating the design, layout, and responsiveness of the original website, showcasing skills in front-end development.</p>
-                        <a href="https://m-aayan.github.io/Expertizo-website-clone/" target="_blank" class="project-link">View Project</a>
-                    </div>
-
-                
-                     <!-- Project 4 -->
-                    <img class="images" src="Saylani-login-page-clone.png" alt="Project 5" width="400px">
-                    <div class="project-info">
-                        <h2>Saylani Landing Page</h2>
-                        <p>The Saylani Website Landing Page is a static webpage designed to represent the front-facing layout of the Saylani Welfare organization. Built exclusively with HTML and CSS, it provides a professional and visually appealing interface tailored to showcase Saylani’s mission, services, and initiatives.</p>
-                        <a href="https://m-aayan.github.io/Saylani-website-landing-page/" target="_blank" class="project-link">View Project</a>
-                    </div>
-                </div>
-                </div>
-         </section>
-
-
-         <!-- contact section  -->
-         
-         <section class="contact-section" id="contact">
-            <div class="contact-section-container">
-              <header class="contact-section-header">
-                <h1>Get in touch</h1>
-                <p>Feel free to reach out to me at any time. I'm always here to help with your projects or answer any questions you may have. I'm also open to discussing opportunities for collaboration and partnerships.</p>
-              </header>            
-      
-                    <div class="contact-section-form-container">
-                      <form class="contact-section-form">
-                        <div class="contact-section-form-flexes">
-                          <div class="form-name">
-                            <input type="text" name="name" placeholder="Your Name" required class="form-control">
-                          </div>
-                          <div class="form-email">
-                            <input type="email" name="email" placeholder="Your Email" required class="form-control">
-                          </div>
-                          <div class="form-subject">
-                            <input type="text" name="subject" placeholder="Subject" required class="form-control">
-                          </div>
-                          <div class="form-message">
-                            <textarea name="message" placeholder="Your Message" required class="form-control" style="height: 152px !important; width: 480px !important;"></textarea>
-                          </div>
-                          <div class="form-submit">
-                            <button type="submit">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-              </div>
-           </section>
-
-
-           <!-- footer section  -->
-            
-           <footer class="footer-section">
-            <div class="footer-container">
-              <p>&copy; 2025 Muhammad Aayan Shaikh. All Rights Reserved.</p>
-              <ul class="social-links">
-                <li><a href="https://github.com/M-Aayan" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/muhammad-aayan-shaikh-ab96a2319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/muhammad_aayan_69/" target="_blank">Instagram</a></li>
-              </ul>
-            </div>
-
-            <div class="top-to-bottom-button">
-              <a href="#about"><i class="fa-solid fa-angle-up"></i></a>
-            </div>
-          </footer>
-
-          
-
-          <!-- if anything needed -->
+    <!-- <-- social side panels -->
+    <!-- Social Side Panel -->
+    <div class="side-social-accounts">
+      <a href="https://www.instagram.com/muhammad_aayan_69/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/muhammad-aayan-shaikh-ab96a2319" target="_blank"><i
+          class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/share/1GQPwB43w6/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://github.com/M-Aayan" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <div class="hr-line">
+        <hr>
+      </div>
     </div>
+
+
+
+    <!-- About Information -->
+    <section id="about" class="about-info-section">
+      <div class="about-info-title">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="hello">
+        Hey! <span class="shake-hand">👋</span>
+      </div>
+
+      <div class="about-info-content">
+        <p>
+          My name is <b class="bold-name">Muhammad Aayan Shaikh</b>, a first-year <b class="bold-name">Computer
+            Science</b> student at
+          <a class="bold-name" href="https://ilmauniversity.edu.pk/" target="_blank">Ilma University</a>.
+          I am also a Designer and Front-end Web Developer with a passion for sleek and clean UI elements.
+          I’ve worked on many UI design projects in Figma and also have hands-on experience building web applications
+          using HTML, CSS, and JavaScript.
+        </p>
+
+        <p class="about-tech">
+          Few technologies I’m working on recently:
+        </p>
+      </div>
+
+      <div class="about-info-skills">
+        <ul>
+          <li><i class="fa-solid fa-caret-right"></i> HTML</li>
+          <li><i class="fa-solid fa-caret-right"></i> CSS</li>
+          <li><i class="fa-solid fa-caret-right"></i> JavaScript</li>
+          <li><i class="fa-solid fa-caret-right"></i> Figma</li>
+          <li><i class="fa-solid fa-caret-right"></i> GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <!-- skills  -->
+
+    <section class="Skills" id="skills">
+      <div class="main-skill-heading">
+        <h1>What I Do</h1>
+      </div>
+      <div class="gif-and-my-skill-info">
+        <div class="image"><img src="coding-image.png" alt="image"></div>
+        <div class="heading2">
+          <h2>Front-end Development</h2>
+          <div class="logos">
+            <svg class="html" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+              viewBox="0 0 48 48">
+              <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+              <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+              <path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z">
+              </path>
+              <path fill="#EEE"
+                d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+              </path>
+            </svg>
+
+            <svg class="CSS" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+              viewBox="0 0 48 48">
+              <linearGradient id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1" x1="16.33" x2="32.293" y1="-2.748"
+                y2="41.109" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#2aa4f4"></stop>
+                <stop offset="1" stop-color="#007ad9"></stop>
+              </linearGradient>
+              <path fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)"
+                d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z">
+              </path>
+              <path fill="#35c1f1"
+                d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z">
+              </path>
+              <path fill="#fff" d="M33.1,13H24v4h4.9l-0.3,4H24v4h4.4l-0.3,4.5L24,30.9v4.2l7.9-2.6L32.6,21l0,0L33.1,13z">
+              </path>
+              <path fill="#d6e0e9"
+                d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4	L19.8,27z">
+              </path>
+              <path
+                d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M34.164,12H33.1H24h-9.2h-1.078l0.081,1.075l0.3,4L14.172,18H15.1H24h3.822l-0.15,2H24h-4.6h-1.051 l0.052,1.05l0.2,4L18.649,26H15.8h-1.056l0.058,1.054l0.3,5.5l0.037,0.682l0.649,0.214l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6 l0.644-0.212l0.041-0.677l0.7-11.5l0.5-7.998L34.164,12L34.164,12z M20.761,26H24h3.331l-0.185,2.769L24,29.843l-3.128-1.068 l-0.073-1.815L20.761,26L20.761,26z"
+                opacity=".05"></path>
+              <path
+                d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M33.632,12.5H33.1H24h-9.2h-0.539l0.04,0.537l0.3,4l0.035,0.463H15.1H24h4.361l-0.225,3H24h-4.6h-0.526 l0.026,0.525l0.2,4l0.024,0.475H19.6H24h3.866l-0.242,3.634L24,30.372l-3.614-1.234L20.3,26.98L20.28,26.5H19.8h-4h-0.528 l0.029,0.527l0.3,5.5l0.019,0.341l0.324,0.107l7.9,2.6L24,35.626l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.5-7.999 L33.632,12.5L33.632,12.5z"
+                opacity=".07"></path>
+            </svg>
+
+
+            <svg class="JS" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+              viewBox="0 0 48 48">
+              <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+              <path fill="#000001"
+                d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z">
+              </path>
+            </svg>
+
+            <svg class="Figma" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35"
+              viewBox="0 0 48 48">
+              <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
+              <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
+              <path fill="#66bb6a"
+                d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path>
+              <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
+              <circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+            </svg>
+
+            <span class="my-skill-info-list">
+              <p><b style="color: #00FFE7;">HTML:</b> Crafting clean, semantic, and accessible web structures.</p>
+              <p><b style="color: #00FFE7;">CSS:</b> Designing visually appealing and responsive web layouts.</p>
+              <p><b style="color: #00FFE7;">Javascript:</b> interactivity and dynamic functionality to websites.</p>
+              <p><b style="color: #00FFE7;">Figma:</b> Creating intuitive and user-friendly UI/UX designs with
+                precision.</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section  -->
+
+
+    <section class="Projects" id="projects">
+      <div class="project-heading">
+        <h1>Projects I've Worked</h1>
+      </div>
+
+      <div class="project-grid">
+        <!-- Card 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="xbox web landing page design.jpg" alt="Xbox Web Landing Page">
+          </div>
+          <div class="project-info">
+            <h2>Xbox Web Landing Page UI</h2>
+            <p>I completed a personal project on Figma to reimagine the web landing page for Xbox Series X, aiming for
+              an engaging and sleek design.</p>
+            <a href="https://www.behance.net/gallery/211401647/Xbox-series-x-uiux-design" target="_blank"
+              class="project-link">View Project</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="zilbil app UI.png" alt="Zilbil App UI Design">
+          </div>
+          <div class="project-info">
+            <h2>Zilbil App UI Design</h2>
+            <p>Designed a clean, modern app UI for Zilbil using Figma, focusing on intuitive navigation and engaging
+              visuals.</p>
+            <a href="https://www.behance.net/gallery/209241503/A-zilbil-pakistani-brand-app-ui-design-prototype"
+              target="_blank" class="project-link">View Project</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="expertizo-clone.png" alt="Expertizo Clone">
+          </div>
+          <div class="project-info">
+            <h2>Expertizo Clone</h2>
+            <p>Created a clone of the Expertizo website with HTML & CSS, replicating its design, layout, and
+              responsiveness.</p>
+            <a href="https://m-aayan.github.io/Expertizo-website-clone/" target="_blank" class="project-link">View
+              Project</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Saylani-login-page-clone.png" alt="Saylani Landing Page">
+          </div>
+          <div class="project-info">
+            <h2>Saylani Landing Page</h2>
+            <p>Developed a static HTML/CSS landing page for Saylani Welfare to represent their mission and services
+              visually.</p>
+            <a href="https://m-aayan.github.io/Saylani-website-landing-page/" target="_blank" class="project-link">View
+              Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-section-container">
+
+        <!-- Header -->
+        <div class="contact-section-header">
+          <h1>Contact Me</h1>
+          <p>Got a question or want to work together? Fill out the form below and I’ll get back to you.</p>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-section-form-container">
+          <form class="contact-section-form">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="email" class="form-control" placeholder="Your Email" required>
+            <textarea class="form-control" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <p>&copy; 2025 Muhammad Aayan Shaikh. All Rights Reserved.</p>
+        <ul class="social-links">
+          <li><a href="https://github.com/M-Aayan" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/muhammad-aayan-shaikh-ab96a2319" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/muhammad_aayan_69/" target="_blank"
+              rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div class="top-to-bottom-button">
+        <a href="#about" aria-label="Scroll to top">Top</a>
+      </div>
+
+    </footer>
+
+  </div>
+  <script src="main.js"></script>
 </body>
+
 </html>
